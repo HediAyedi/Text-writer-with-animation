@@ -29,9 +29,25 @@ h1::before,h1::after{
 }
 
 h1::before{
-	background: grey;
+	background: var(--bg-color);;
 	animation: typewriter 5s steps(26) forwards;
 }
+
+
+h1::after{
+	width: 0.125em;
+	background-color: black;
+	animation: blink 0.5s infinite;
+}
+@keyframes blink{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
 
 @keyframes typewriter{
 	to {
