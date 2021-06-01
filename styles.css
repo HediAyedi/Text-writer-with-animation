@@ -1,0 +1,25 @@
+:root{
+	--bg-color : hsl(49 57% 94%);
+}
+
+body{
+	margin: 0;
+	font-family: monospace;
+	min-height: 100vh;
+	display: grid;
+	place-content:center;
+	text-align: center;
+	background: var(--bg-color);
+}
+
+h1{
+	font-size: clamp(1rem,3vw + 1rem, 4rem);
+	position: relative;
+	font-family: monospace;
+}	
+
+.subtitle{
+	color: hsl(0 0% 0% /0.7);
+	font-size: 2rem;
+	font-weight: 400;
+}
